@@ -1,0 +1,158 @@
+Windows Registry Editor Version 5.00
+
+;Windows 11 Classic context menus
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}]
+@=""
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32]
+@=""
+
+;Add new text document to context menu
+[-HKEY_CLASSES_ROOT\.txt\ShellNew]
+[HKEY_CLASSES_ROOT\.txt\ShellNew]
+"NullFile"=""
+"ItemName"="Text Document"
+
+;Windows 11 align Start menu to left
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarAl"=dword:00000000
+
+;Hide search bar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000
+
+;Stop tracking latest files
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000000
+
+;Hide frequently used files
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowFrequent"=dword:00000000
+
+;Dont track recent files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000000
+
+;Hide recently added apps
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+;Show file extensions 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000
+
+;Hide Task view button
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowTaskViewButton"=dword:00000000
+
+;Hide Widgets
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Dsh]
+"AllowNewsAndInterests"=dword:00000000
+
+;Hide Chat
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarMn"=dword:00000000
+
+;Unpin microsoft store from taskbar
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"NoPinningStoreToTaskbar"=dword:00000001
+
+
+
+;[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+;"NoPinningStoreToTaskbar"=-
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+;"NoPinningStoreToTaskbar"=-
+
+
+
+;Hide recommended section from Start
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecommendedSection"=dword:00000001
+
+;Start explorer at This PC
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
+
+;Show all folders
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"NavPaneShowAllFolders"=dword:00000001
+
+;Expand to open folder
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"NavPaneExpandToCurrentFolder"=dword:00000001
+
+;Set detailed file view in Explorer
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell]
+"WFlags"=dword:00000000
+"Status"=dword:00000000
+"Mode"=dword:00000004
+"vid"="{137E7700-3573-11CF-AE69-08002B2E1262}"
+
+;Show more information in file transfer dialog
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager]
+"EnthusiastMode"=dword:00000001
+
+;Hide news and feeds
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds]
+"ShellFeedsTaskbarViewMode"=dword:00000002
+
+;Controlpanel small icons view
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel]
+"AllItemsIconView"=dword:00000001
+"StartupPage"=dword:00000001
+
+;Disable Windows Update Delivery uptimization
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc]
+"Start"=dword:00000004
+
+
+
+
+;Power setting Do nothing when closing lid (ONLY SYSTEM RIGHTS)
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\1aacc01f-5de5-4504-9162-2d6f3f7c4a9e\4f971e89-eebd-4455-a8de-9e59040e7347\5ca83367-6e45-459f-a27b-476b1d01c936]
+;"DCSettingIndex"=dword:00000000
+;"ACSettingIndex"=dword:00000000
+
+;Power setting go to sleep when pressing power button (ONLY SYSTEM RIGHTS)
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\1aacc01f-5de5-4504-9162-2d6f3f7c4a9e\4f971e89-eebd-4455-a8de-9e59040e7347\7648efa3-dd9c-4e3e-b566-50f929386280]
+;"DCSettingIndex"=dword:00000001
+;"ACSettingIndex"=dword:00000001
+
+;Power setting turn off screen after (ONLY SYSTEM RIGHTS)
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\1aacc01f-5de5-4504-9162-2d6f3f7c4a9e\7516b95f-f776-4464-8c53-06167f40cc99\3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e]
+;"DCSettingIndex"=dword:00007200
+;"ACSettingIndex"=dword:00007200
+
+;Power setting never go to sleep timer (ONLY SYSTEM RIGHTS)
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\User\PowerSchemes\1aacc01f-5de5-4504-9162-2d6f3f7c4a9e\238c9fa8-0aad-41ed-83f4-97be242c8f20\29f6c1db-86da-48c5-9fdb-f2b67b1f44da]
+;"DCSettingIndex"=dword:00000000
+;"ACSettingIndex"=dword:00000000
+
+
+;Disable Windows 11 24H2 Recall
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+
+
+
+;Install
+;ACDsee
+;Acrobat reader
+;Winrar
+;NMAP
+;Avira
+;Office
+;Ultraedit
+;Summasummarum
+;Google earth
+;VLC
+;printer
+;foobar2000
